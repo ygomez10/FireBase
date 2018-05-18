@@ -1,0 +1,428 @@
+ var myData = {
+  "messages": {
+    "Help": {
+      "Title": "Help",
+      "Subtitle": "Some useful Links",
+      "Message": "<p><a href='http://monogatari.hyuchia.com/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='http://monogatari.hyuchia.com/demo/'>Demo</a> - A simple Demo.</p>"
+    }
+  },
+ "notifications":{
+	"Welcome": {
+	"title": "Welcome",
+	"body": "This is an interactive story",
+		"icon": ""	}
+},
+  "particles": {
+    "universe": {
+      "particles": {
+        "number": {
+          "value": 0,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#330B29"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    }
+  },
+  "music": {
+    "choice": "Choice.mp3"
+  },
+  "voice": {
+    
+  },
+  "sound": {
+   
+    "Knock": "knockondoor.wav"
+  },
+  "videos": {},
+  "images": {},
+  "scenes": {
+   "Main": "opening.png",
+   "Blackscreen": "blackscreen.jpg",
+	"Start": "start.png",
+	"Kitchen": "kitchen.png",
+	"Bakery": "bakery.png",
+	"3channel": "3channel.png",
+	"Home": "home.png",
+	"Money": "money.png",
+	"Food": "food.png",
+	"Clothes": "clothes.png",
+	"Farm": "farm.png",
+	"Execution": "execution.png",
+	"Hole": "hole.png",
+	"Night": "night.png",
+	"Invasion": "invasion.png",
+	"Invasion1": "invasion1.png",
+	"Mountian": "mountian.png",
+	"2nd capture": "2ndcapture.png",
+	"Movement": "movement.png",
+	"Thailand": "thailand.png",
+	"Settlement": "settlement.png",
+
+  },
+  "characters": {
+    "m": {
+      "Name": "Meng",
+      "Color": "#5bcaff",
+      "Images": {
+		"Normal":"meng.png",
+        "Lunge": "lunge.png",
+      }
+    },
+ 	"s": {
+		"Name": "Siv",
+		"Color": "#5bcaff",
+		"Images":{
+		"Normal": "siv.png",
+        
+      }
+    },
+	"i": {
+		"Name": "Ing",
+		"Color": "#5bcaff",
+		"Images":{
+		"Normal": "ing.png",
+        
+      }
+    },
+	"k": {
+		"Name": "Khmer Soldier",
+		"Color": "#5bcaff",
+		"Images": {
+		"Normal": "khmersoldier.png",
+		"Speaker": "speaker.png",
+		}
+	},
+		
+  },
+
+
+
+
+  "script": {
+	// The game starts here.
+	"Start": [
+		"scene Main",
+		"notify Welcome",
+		"Welcome to Our Journey",
+
+
+		{"Choice": {
+				"Dialog": "Are you ready to start the journey?",
+				"Yes": {
+					"Text": "Yes",
+					"Do": "jump Yes"
+				},
+				"No": {
+					"Text": "No",
+					"Do": "jump No"
+				}
+			}
+		}
+	],
+
+	"Yes": [
+
+    "scene Start",
+	
+	
+	"scene Kitchen",
+	"When I was little, I loved watching the rapid-fire movements of the cooks as they flipped the dish above a large flame. ",
+	
+	"scene Bakery",
+	"show m Normal fadeIn",
+	"1969 moved into Battamang with family and opened a pastry business.",
+	
+	"scene Blackscreen",
+	"On April 15th 1975 was the arrival on the Khmer Rouge.",
+
+	"scene Bakeryfade",
+	"show k Speaker Right fadeIn",
+	"Soldiers yelling and missle explosions leaves you with two choices.",
+	{"Choice": {
+
+				"Dialog": "What are you going to do?",
+				"Finish": {
+					"Text": "Finish Business",
+					"Do": "jump Finish"
+				},
+				"Leave": {
+					"Text": "Leaves Business",
+					"Do": "jump Leave"
+				}
+			}
+		}
+	],
+	
+"Finish": [
+	"scene Bakery",
+	"show m Normal Right fadeIn",
+	"m Here's your change.",
+	
+	
+	"scene Bakery",
+	"show k Speaker Right fadeIn",
+	"k Everyone out, you (points at you), come with me.",
+	
+	"scene Bakeryfade",
+	"show m Normal Right fadeIn",
+	"m Can I see my family first?",
+	
+	"scene Bakeryfade",
+	"show k Normal Right fadeIn",
+	"k You can go, but expect soilders to pick you up soon.",
+	
+ {"Choice": {
+
+      "Dialog": "Click contine..",
+      "Shoot": {
+        "Text": "Continue",
+        "Do": "jump Leave"
+      }
+    }
+  }
+],
+
+"Leave": [
+ 	"scene Bakery",
+	"show m Normal Right fadeIn",
+	"m I have to make sure they're alright.",
+	
+	"scene Bakeryfade",
+	"show m Lunge Right fadeIn",
+	"Meng rushes out the door and back home he goes.",
+	
+
+	"scene 3channel",
+	"show m Lunge Middle fadeIn",
+	"As Meng rushes back home he sees families being striped of their homes, friends and family being shot and killed and many soldiers surround them.",
+
+	"scene Home",
+	"show m Lunge Left fadeIn",
+	"Upon arriving home, we hear the Khmer Soldiers walking through the streets yelling.",
+	
+	"scene Blackscreen",
+	"show k Speaker right fadeIn",
+	"Take as little as you can! You will not need your city belongings! You will be able to return in three days! No one can stay here! The city must be clean and empty! The U.S. will bomb the city! The U.S. will bomb the city! Leave and stay in the country for a few days! Leave now!",
+	
+	{"Choice": {
+
+				"Dialog": "What are you going to take?",
+				"Food": {
+					"Text": "Take a backpack full of food",
+					"Do": "jump Food"
+				},
+				//"Money": {
+					//"Text": "Take all the money that remains",
+					//"Do": "jump Money"
+				//}
+				"Clothes": {
+					"Text": "Take several pair of clothes",
+					"Do": "jump Clothes"
+				}
+			}
+		}
+	
+	],
+"Food": [
+	"scene Food",
+	"You've taken a bag full of food, you will be able to survive for at least a week",
+	{"Choice": {
+
+      "Dialog": "Click contine..",
+      "Shoot": {
+        "Text": "Continue",
+        "Do": "jump Farm"
+      }
+    }
+  }
+	],
+"Money": [
+	"scene Money",
+	"You've taken the remain of gold you had from home, but there are no shops for you to buy things from, you will have to hope that other hostages are willing to sell you what they have at the site.",
+	{"Choice": {
+
+      "Dialog": "Click contine..",
+      "Shoot": {
+        "Text": "Continue",
+        "Do": "jump Farm"
+      }
+    }
+  }
+	],
+"Clothes": [
+	"scene Clothes",
+	"You've taken a few pair of clothing with you. You will be able to stay warm but you will be starving and it will slowly get weaker.",
+	{"Choice": {
+
+      "Dialog": "Click contine..",
+      "Shoot": {
+        "Text": "Continue",
+        "Do": "jump Farm"
+      }
+    }
+  }
+	],
+"Farm": [
+	"scene Farm",
+	"Meng was taken in with his family alongside many others to a farm to grow rice, an area with not much shelter to live or sleep. The local Khmer Rouge gave me a grass hut to live in, I had not blankets or rug so I just layed down on the bamboo rack. One day the officials came in with their soldiers.",
+	
+	"scene Farm",
+	"show k Speaker Right fadeIn I'm going to need the man of the household to step out please.",
+	
+	"scene Farm",
+	"show s Normal Right fadeIn What do we do? Should we let Meng come out?",
+	
+	"scene Farm",
+	"show i Normal Right fadeIn No, we won't let anyone tear this family apart.",
+	
+	"scene Farm", 
+	"show k Normal Right fadeIn I'm going to ask this again before I  inspect this place. Is the man of the household available?",
+	
+	"scene Farm",
+	"show m Normal Left fadeIn It's okay ma, I'll be fine.",
+	
+	"scene Blackscreen",
+	"Meng gets taken in with the soldiers",
+	
+	"scene Execution",
+	" Not long after my father was captured by a soldier who recognized him, he was taken in with the other mens, one by one wrapped in blindfold, ready for execution.",
+	
+	"scene Night",
+	"It was night time, they left those captured to rest and to continue the execution in the morning. At that point a family friend sneaked over to help my father out and escape the hole.",
+	
+	"scene Invasion1",
+	"Not long, an international crisis heated up when Vietnam invaded Cambodia in December 1978 and ousted the China-backed Khmer Rouge regime.",
+	
+	"scene Invasion",
+	"the attack",
+	
+	"scene Thailand",
+	"By 1979, more than half a million Cambodians were trying to enter Thailand, but by this time the first country of asylum for VIetnamese, Lao, and Cambodian refugees was experiencing a growing refugee crisis.  Despite the struggles Meng left with his family along many others to Thailand.",
+	
+	"scene Movement",
+	"But a month later they were captured and taken back to the Thai/Cambodia border, in the mountains, where other refugees were held captive. We spend the night in the dark, afraid that any light might signal our whereabouts to the Khmer Rouge soldiers. They pack their bags and monitor their steps, slowly reaching days by walking two weeks in arrival to Bong Jiam. ",
+	
+	"scene Blackscreen",
+	"2 years later...",
+	
+	"scene Night",
+	"Between 1980 and 1986, another 122,000 arrived in Thailand, where they applied for resettlement in a third country. They headed back to the camps then emerged to Batang Philippines. Meng studied English for a year and a half there then on September 20th 1981 he came to the United States.",
+	"With little education and a lack of familiarity with urban life, those who were eventually resettled in the United States struggled as they tried to heal from years of war and trauma and adapt to their new surroundings.",
+	
+	"scene Settlement",
+	"In 1982 Meng went back to bring his family over and started living in Seattle, Washington.",
+	
+	"scene Settlement",
+	"show m Normal Right fadeIn Upon arrival and living here it was a taste of a new air, everything that was once in Cambodia still dug inside me to the sound of sirens that I hear and honking in the streets; I keep waking up and think that I’m still where I was then.", 
+	"But after much time to adapt and get used to the environment of diversity and cultural change Meng found a job and started working at Harborview Medical Center and then Seattle Center.",
+	],
+	"No": [
+
+		"end"
+	]
+}
+}
+
+
+

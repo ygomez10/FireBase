@@ -1,0 +1,41 @@
+[debug] [2018-05-16T17:04:03.592Z] ----------------------------------------------------------------------
+[debug] [2018-05-16T17:04:03.594Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting
+[debug] [2018-05-16T17:04:03.594Z] CLI Version:   3.18.4
+[debug] [2018-05-16T17:04:03.594Z] Platform:      darwin
+[debug] [2018-05-16T17:04:03.594Z] Node Version:  v8.11.1
+[debug] [2018-05-16T17:04:03.595Z] Time:          Wed May 16 2018 10:04:03 GMT-0700 (PDT)
+[debug] [2018-05-16T17:04:03.595Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-16T17:04:03.602Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-16T17:04:03.602Z] > authorizing via signed-in user
+[debug] [2018-05-16T17:04:03.604Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-05-16T17:04:03.604Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/1VZI0Wf1KMFzgSV4-M4X0dZQuz04wR_F5jFet8Ze5RxL8-P4bKMGLTqIkD73P937',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed May 16 2018 10:04:03 GMT-0700 (PDT)
+[debug] [2018-05-16T17:04:04.501Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-16T17:04:04.510Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/capstone-website-834e7  
+  
+ Wed May 16 2018 10:04:04 GMT-0700 (PDT)
+[debug] [2018-05-16T17:04:04.941Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-16T17:04:04.942Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/capstone-website-834e7/tokens  
+  
+ Wed May 16 2018 10:04:04 GMT-0700 (PDT)
+[debug] [2018-05-16T17:04:05.309Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-16T17:04:05.310Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/capstone-website-834e7  
+  
+ Wed May 16 2018 10:04:05 GMT-0700 (PDT)
+[debug] [2018-05-16T17:04:05.868Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/ygomez17/Desktop/PublicFB'...
+[info] 
+[debug] [2018-05-16T17:04:05.870Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/847316514872/clients/_:getWebAppConfig  
+  
+ Wed May 16 2018 10:04:05 GMT-0700 (PDT)
+[debug] [2018-05-16T17:04:06.310Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

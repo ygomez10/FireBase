@@ -1,0 +1,339 @@
+ var myData = {
+  "messages": {
+    "Help": {
+      "Title": "Help",
+      "Subtitle": "Some useful Links",
+      "Message": "<p><a href='http://monogatari.hyuchia.com/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='http://monogatari.hyuchia.com/demo/'>Demo</a> - A simple Demo.</p>"
+    }
+  },
+  "particles": {
+    "universe": {
+      "particles": {
+        "number": {
+          "value": 0,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#330B29"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    }
+  },
+  "music": { /*
+    "choice": "Choice.mp3" */
+  },
+
+
+  "voice": {
+   
+  },
+
+
+  "sound": {
+    "Radio": "radio.mp3",
+    "Heli": "heli.mp3",
+    "Meeting": "meeting.mp3",
+    "Walking": "walking.mp3",
+    "Morning": "morning.mp3",
+    "Rain": "rain.mp3",
+    "River": "river.mp3",
+    /*"Nature": "nature.wav",
+    "Birds-morning": "morningbirds.mp3",
+    "Knock": "knockondoor.wav"*/
+  },
+  "videos": {},
+
+  "images": {
+    "Radio": "radio.png",
+  },
+
+
+  "scenes": {
+    "Openning": "openning.jpg",
+    "Village": "village.jpg",
+    "Villageheli": "villagewithheli.jpg",
+    "Thailand": "thailand.jpg",
+    "Usfarm": "usfarm.jpg",
+    "Camp": "camp.jpg",
+    "Campnight": "campnight.jpg",
+    "Aroom": "inaroomintheus.jpg",
+    "Blackscreen": "blackscreen.jpg",
+    "Meeting": "meeting.jpg",
+    "Bustravel": "bustravel.jpg",
+    "River": "river.jpg",
+    "Unitedstates": "unitedstates.jpg",
+    "Nighroom": "inaroomintheusnight.jpg"
+  },
+  "characters": {
+    "m": {
+      "Name": "Meng",
+      "Color": "#5bcaff",
+      "Images": {
+        "Normal": "mnormal.gif",
+        "Mad": "mmad.gif",
+        "Sad": "msad.gif",
+        "Plasticbag": "plasticbag.png"
+      }
+    },
+    "v": {
+      "Name": "Vong",
+      "Color": "#33333",
+      "Images": {
+        "Farm": "vfarm.gif",
+        "Normal": "vnormal.png",
+        "Mad": "vmad.gif",
+        "Happy": "girlhappy.gif",
+        "Serious": ".png",
+        "Sad": "girlsad.gif",
+        "Sitting": "vsitting.gif",
+        
+      }
+    },
+    "object": {
+      "Images": {
+        "Plane": "plane.png",
+        "Radio": "radio.png",
+         
+      }
+    }
+
+  },
+
+
+
+
+  "script": {
+	// The game starts here.
+	"Start": [
+    "scene Openning",
+    "show v Happy middle fadeIn",
+    "Welcome to my journey!",
+    "My name is Vong",
+
+
+		{"Choice": {
+				"Dialog": "Are you ready to start the journey?",
+				"Yes": {
+					"Text": "Yes",
+					"Do": "jump Yes"
+				},
+				"No": {
+					"Text": "No",
+					"Do": "jump No"
+				}
+			}
+		}
+	],
+
+	"Yes": [
+
+    "scene Village",
+    "show object Radio middle fadeIn",
+    "play sound Radio",
+    "The radio announces that the Secret War in Lao is about to end and the Communist, Pathet Lao, is taking over the country. ",
+    "show v Normal right fadeIn", 
+    "scene Villageheli",
+    "play sound Heli",
+    "Night time...",
+
+    "scene Village",
+    "play sound Morning",
+    "In the morning, people are heading to the meeting at the community center.",
+
+
+    "scene Meeting",
+    "play sound Meeting",
+    "show v Normal right fadeIn",
+    "People in the village fear persecution because they helped out the United States during the war. ",
+
+
+
+    "scene Openning",
+    "stop sound",
+    "The villagers become refugees. They have to escape from Lao to Thailand, where the first stop on the road to the United States is.",
+  
+    "scene Villageheli",
+    "play sound Heli",
+    "Many people go with what they can carry and some only escape with what they wore.",
+
+
+    "scene River",
+    "play sound River",
+    "show v Normal right fadeIn",
+    "show m Plasticbag middle fadeIn",
+    "Vong escapes by swimming over the Maekong River. She uses a plastic bag filled with air and  follows a rope across the river.",
+
+    "stop sound",
+    "scene Bustravel",
+    "Vong is separated from her son. She left her son with her brother in a different camp.",
+
+    "scene Thailand",
+    "The bus that Vong took arrived to Thailand border",
+
+    "scene Camp",
+    "show v Sad right fadeIn",
+    "Vong spends several months at a city near the border Thai-Lao before she boards a plane to the United States. ",
+   /* "play sound Birds-morning", */
+   "scene Unitedstates",
+   "Arrived to the United States.",
+
+   "scene Unitedstates",
+   "show v Sad right fadeIn",
+   "When she was finally able to come to the United States, she knew very little English and had minimal understanding of the western culture, society, and norms.",
+
+   "scene Usfarm",
+   "show v Farm right fadeIn",
+   "When she came to the U.S, she started at the bottom, working as a farmer.",
+   "show v Farm right fadeIn",
+
+   "scene Unitedstates",
+   "show v Sad right fadeIn",
+   "The other issue was the language barrier and learning to speak English.",
+   
+
+   "scene Nightroom",
+   "show v Sitting right fadeIn",
+   "On the other refugees, when they tried to talk to people, they could not understand because they knew little to no English. It was very tough for them to communicate with people.",
+   
+   "scene Nightroom",
+   "show v Sitting right fadeIn",
+   "The other issue for them was that they had to adapt to a western culture that had material goods such as appliances and TV's.",
+    
+   
+   "scene Aroom",
+   "show v Normal right fadeIn",
+   
+  
+
+   "A year after Vong moved to the US, Vong and her son reunited at their host's house.",
+   "scene Unitedstates",
+   "show v Normal right fadeIn",
+   "show m Normal left fadeIn",
+   "And they continue to live in the United States until this day.",
+
+   "scene Unitedstates",
+   "The End...",
+   
+
+
+
+  
+ 
+
+	
+	],
+
+
+
+
+
+
+
+	"No": [
+
+		"end"
+	]
+
+}
+
+
+}

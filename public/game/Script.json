@@ -1,0 +1,982 @@
+ var myData = {
+  "messages": {
+    "Help": {
+      "Title": "Help",
+      "Subtitle": "Some useful Links",
+      "Message": "<p><a href='http://monogatari.hyuchia.com/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='http://monogatari.hyuchia.com/demo/'>Demo</a> - A simple Demo.</p>"
+    }
+  },
+ "notifications":{
+	"Welcome": {
+	"title": "Welcome",
+	"body": "This is an interactive story",
+		"icon": ""	}
+},
+  "particles": {
+    "universe": {
+      "particles": {
+        "number": {
+          "value": 0,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#330B29"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    }
+  },
+  "music": {
+    "choice": "Choice.mp3"
+  },
+  "voice": {
+    "Story": "story.wav",
+    "Voice1": "STE-000.mp3",
+    "Voice2": "STE-001.mp3",
+    "Voice3": "STE-002.mp3",
+    "Voice4": "STE-003.mp3",
+    "Voice5": "STE-004.mp3",
+    "Voice6": "STE-005.mp3",
+    "Voice7": "STE-006.mp3",
+    "Voice8": "STE-007.mp3",
+    "Voice9": "STE-008.mp3",
+    "Voice10": "STE-009.mp3",
+    "Voice11": "STE-010.mp3",
+    "Voice12": "STE-011.mp3",
+    "Voice13": "STE-012.mp3",
+    "Voice14": "STE-013.mp3",
+    "Voice15": "STE-014.mp3",
+    "Voice16": "STE-015.mp3",
+    "Voice17": "STE-016.mp3",
+    "Voice18": "STE-017.mp3",
+    "Voice19": "STE-018.mp3",
+    "Voice20": "STE-019.mp3",
+    "Voice21": "STE-020.mp3",
+    "Voice22": "STE-021.mp3",
+    "Voice23": "STE-022.mp3",
+    "Voice24": "STE-023.mp3",
+    "Voice25": "STE-025.mp3",
+    "Voice26": "STE-026.mp3",
+    "Voice27": "STE-028.mp3",
+    "Voice28": "STE-030.mp3",
+    "Voice29": "STE-031.mp3",
+    "Voice30": "STE-032.mp3",
+    "Voice31": "STE-035.mp3",
+    "Voice32": "STE-036.mp3",
+    "Voice33": "STE-037.mp3",
+    "Voice34": "STE-038.mp3",
+    "Voice35": "STE-039.mp3"
+  },
+  "sound": {
+    "Nature": "nature.wav",
+    "Birds-morning": "morningbirds.mp3",
+    "Knock": "knockondoor.wav"
+  },
+  "videos": {},
+  "images": {},
+  "scenes": {
+    "Main": "ourjourney.png",
+    "Fin-Red":"Fin-red.png",
+    "Fin-Blue": "Fin-Blue.png",
+    "Lado": "Lado.png",
+    "Home": "Home.png",
+    "City": "City.png",
+    "Eyes": "Eyes.png",
+    "Airport":"Airport.png",
+    "AZ-H-V": "Arizona-House-V.png",
+    "AZ-H":"Arizona-House.png",
+    "Deer": "Deer.png",
+    "Home-Noon": "House-Noon.png",
+    "Road": "Road.png",
+    "Saars": "Saars.png",
+    "River": "River.png",
+    "Home-heli":"Home-Heli.png",
+    "Fishing":"fishing.png",
+    "Fire": "Fire.png",
+    "Fronthouse": "fronthousebg.jpg",
+    "Mountain": "Mountain.png",
+    "Forest": "forestbg.jpg",
+    "Beach": "beach.png",
+    "Bed": "bed.png",
+    "Housefar": "housefar.png",
+    "Blackscreen": "blackscreen.jpg",
+    "Theway": "outside.png",
+    "Fishing-Blood": "Fishing-Blood.png"
+  },
+  "characters": {
+    "j": {
+      "Name": "Javier",
+      "Color": "#5bcaff",
+      "Images": {
+        "Normal": "jnormal.png",
+        "Mad": "jmad.png",
+        "Sad": "jsad.png"
+      }
+    },
+    "l": {
+      "Name": "Linda",
+      "Color": "#33333",
+      "Images": {
+        "Normal": "lnormal.png",
+        "Mad": "lmad.png",
+        "Serious": "lserious.png"
+      }
+    },
+    "a": {
+      "Name": "Ariel",
+      "Color": "#D32637",
+      "Images": {
+        "Normal": "anormal.png",
+        "Mad": "amad.png"
+      }
+    },
+      "sa": {
+        "Name": "Soldier",
+        "Color": "#24ED24",
+        "Images": {
+          "Happy": "sahappy.png",
+          "Mad": "samad.png",
+          "Inter": "sainter.png"
+        }
+      }
+
+  },
+
+
+
+
+  "script": {
+
+	"Start": [
+		"scene Lado",
+		"notify Welcome",
+		"Welcome to our journey",
+
+
+		{"Choice": {
+				"Dialog": "Are you ready to start the journey?",
+				"Yes": {
+					"Text": "Yes",
+					"Do": "jump Yes"
+				},
+				"No": {
+					"Text": "No",
+					"Do": "jump No"
+				}
+			}
+		}
+	],
+
+	"Yes": [
+
+    "scene Blackscreen",
+    "show a Normal right fadeIn",
+  	"a Wake up, we need to go, if we are going to get there on time!!",
+
+
+    "scene Home",
+    "play sound Nature",
+    "show j Normal Right fadeIn",
+    "j Ok, Ok, I am awake ready to go.",
+
+
+    "scene blackscreen",
+    "1 hour and 30 minutes later",
+
+    "scene Mountain",
+    "show a Normal right fadeIn",
+    "a Be silent, approach as silently as possible",
+    "play sound Birds-morning",
+
+
+    "scene Mountain",
+    "show j Normal right fadeIn",
+    "j I have one in scope",
+
+    "scene Deer",
+    "show a Normal right fadeIn",
+    "play sound Nature",
+    "a Take a breath and focus the scope then take the shot.",
+    "play music choice",
+
+		{"Choice": {
+
+				"Dialog": "What are you going to do?",
+				"Shoot": {
+					"Text": "Shoot right away!!",
+					"Do": "jump Shoot"
+				},
+				"Wait": {
+					"Text": "Wait to have clear shot.",
+					"Do": "jump Wait"
+				}
+			}
+		}
+	],
+
+"Shoot": [
+  "scene Mountain",
+  "stop music",
+  "stop sound",
+  "particles Snow",
+  "show j Mad right fadeIn",
+  "j Oh no it got away, I shot too early.",
+
+  "scene Mountain",
+  "show a Mad right fadeIn",
+  "a See, I told you to have a clear shot, listen to me next time!!",
+
+
+  "scene Mountain",
+  "show j Mad right fadeIn",
+  "j I will do that next time, what do we do next?",
+
+  "scene Mountain",
+  "show a Normal",
+  "a We have to go to a different location because if there were any deer nearby, they are now long gone.",
+
+  "scene Blackscreen",
+  "2 hours later",
+
+  "scene Mountain",
+  "show j Mad right fadeIn",
+  "Ok, let go then, I am getting hungry. Looks like you scared all the animals in the area. good job.",
+
+  "scene Blackscreen",
+  "1 hour and 30 minutes later",
+
+  "scene Home",
+  "show l Serious left fadeIn",
+  "l You didn't get anything? I had a feeling this might happen so I prepared some food for you.",
+
+  "scene Home",
+  "show j Sad right fadeIn",
+  "j Aaaah beans again, You know what, I am so hungry and tired that these are delicious, but deer would have been better.",
+
+  {"Choice": {
+
+      "Dialog": "Click continue..",
+      "Shoot": {
+        "Text": "Continue",
+        "Do": "jump Afternoon"
+      }
+    }
+  }
+
+
+],
+"Wait": [
+ 	"scene Mountain",
+	"show j Normal right fadeIn",
+	"j Yes!!,  It looks like I got it.",
+
+
+  "scene Forest",
+  "show a Normal right fadeIn",
+  "a Nice, we are going to eat well tonight",
+
+  "scene Forest",
+  "show j Normal right fadeIn",
+  "j Let's go get it. - runs towards deer.",
+
+  "scene Forest",
+  "show a Normal right fadeIn",
+  "a Be careful!!",
+
+  {"Choice": {
+
+      "Dialog": "Your choice",
+      "Shoot": {
+        "Text": "Get a closer look.",
+        "Do": "jump Get-Closer"
+      },
+      "Wait": {
+        "Text": "Be careful and don't get too close.",
+        "Do": "jump Be-Careful"
+      }
+    }
+  }
+
+
+],
+"Get-Closer": [
+  "scene Forest",
+  "show j right fadeIn",
+  "j It's fine, it's dead already",
+
+  "scene Blackscreen",
+  "In the deer's final breath it kicks JAVIER in one hand as he jumps back. His hand is left bloody with peeled skin due to the force of the kick being so strong.",
+
+  "scene Forest",
+  "show j Normal right fadeIn",
+  "j Aaah, aah, aah",
+
+  "scene Forest",
+  "show a Normal right fadeIn",
+  "a I told you not to get close, when deer are dying they are at their strongest. You know we can't afford for any of us to get injured, the closest clinic is 2 hours away. And the doctors are never there.",
+
+  "scene Forest",
+  "show j Normal right fadeIn",
+  "j And if the doctor is not there we would have to drive to the city which takes about 3 hours. I know I am sorry.",
+
+  "scene Forest",
+  "show a Normal right fadeIn",
+  "a Alright, let's go you have to learn from your pain. So you learn from your mistakes it will heal with time.",
+
+  "scene Blackscreen",
+  "About 2 hours later | They arrive at their house.",
+
+  {"Choice": {
+
+      "Dialog": "Click contine..",
+      "Shoot": {
+        "Text": "Continue",
+        "Do": "jump Afternoon-2"
+      }
+    }
+  }
+],
+"Be-Careful": [
+  "scene Forest",
+  "show j Normal right fadeIn",
+  "j Ok, I will make sure it's dead.",
+
+  "scene Forest",
+  "show a Normal right fadeIn",
+  "a Alright, help me carry it home.",
+
+  "scene Blackscreen",
+  "About 1 hour and 30 min later | They arrive at their house.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "l Great job, we will have food for a couple of days. Let's get started on the preparation, I will send some food to your other cousin too.",
+
+  {"Choice": {
+
+      "Dialog": "Click continue..",
+      "Shoot": {
+        "Text": "Continue",
+        "Do": "jump Afternoon"
+      }
+    }
+  }
+],
+"Afternoon-2": [
+  "scene Home",
+  "show l Normal right fadeIn",
+  "l What happened to you Javier?",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "j I made a mistake and I got too close to the deer before it died and it almost killed me with a kick.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "l That is why you have to listen to your cousin when you go hunting he knows about these things and he will keep you safe. You were lucky this time, now come, I will treat your injury.",
+
+  "scene Home",
+  "show l Normal left fadeIn",
+  "l Ariel go ahead and start on the preparation I will join you as soon as I am done treating him.",
+
+  "scene Blackscreen",
+  "After we finished eating a great meal we sat down to admire the fresh humid wind blowing and nice shade as the sun went down.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound Nature",
+  "l You know, I went to see your grandma Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the United States.",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound Nature",
+  "j I am very happy that I will finally be able to see them soon, but at the same time, I feel very sad because I will leave you behind grandma. Once I leave, I won't be able to see you ever again grandma.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound Nature",
+  "l You know, I went to see your grandma Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the United States.",
+
+  "scene Home",
+  "show l Normal",
+  "play sound Nature",
+  "l You never got to meet your uncle because he was killed before you were born. I don't want that to happen to you.In the U.S you will be able to have a better eductation, which you can't have here because our Highest level of education is the equivalent to middle school in the U.S",
+
+  "scene Home",
+  "show j Sad right fadeIn",
+  "play sound Nature",
+  "j Ok, ok I get it, it just sucks that I must leave. I love the enviroment here, and once I leave, I will probably never be able to see it again.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound nature",
+  "l Go prepare some wood, it's getting dark already.",
+
+  "scene Home-heli",
+  "In the morning, there was a helicopter flying over Javier's house, It was pretty low to the ground.",
+
+  "scene Home-heli",
+  "show j Normal right fadeIn",
+  "play sound helicopter",
+  "j Grandma, why is the helicopter flying so low today?",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound helicopter",
+  "l It's probably looking for members of the cartel or those people that sell or buy drugs. There has been a steady increase of cartel influence around here recently and the government knows it. So they usually send helicopters or soldiers to patrol.",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound helicopter",
+  "oh, that makes sense",
+
+  "scene Blackscreen",
+  "play sound River",
+  "30 minutes later",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound River",
+  "it's strange that those guys are in such a hurry",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound River",
+  "l Probably who the helicopter was looking for, it's best not to get involved, don’t go near the river for at least an hour just in case there are more people.",
+
+  "scene Blackscreen",
+  "play sound River",
+  "15 minutes later.",
+
+  "scene Home",
+  "play sound River",
+  "A group of soldiers arrive",
+
+  "scene Home",
+  "show sa Inter right fadeIn",
+  "play sound River",
+  "sa Hello there young man, have you seen a group of men pass by here running?",
+
+  {"Choice": {
+
+      "Dialog": "What are you going to do?",
+      "Shoot": {
+        "Text": "Yes, I did they ran through here a few minutes ago.",
+        "Do": "jump Yes-Running"
+      },
+      "Wait": {
+        "Text": "No, I didn't see anyone go by",
+        "Do": "jump Saw-Nothing"
+      }
+    }
+  }
+
+
+
+
+],
+
+"Afternoon": [
+  "scene Blackscreen",
+  "After we finished eating a great meal we all sat down to admire the fresh humid wind blowing and nice shade as the sun went down.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound Nature",
+  "l You know I went to see your Grandma, Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the United States.",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound Nature",
+  "j I am very happy that I will finally be able to see them soon, but at the same time, I feel very sad because I will leave you behind grandma. Once I leave, I won't be able to see you ever again grandma.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound Nature",
+  "l I know you don't want to leave me behind, but you must do it because it's getting more and more dangerous here everyday. We are living in a place without any laws or law enforcement. Everyone can do whatever they want without fear of punishment.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound Nature",
+  "l You never got to meet your uncle because he was killed before you were born. I don't want that to happen to you.In the U.S you will be able to have a better education, which you can't have here because our highest level of education is the equivalent to middle school in the U.S.",
+
+  "scene Home",
+  "show j Sad right fadeIn",
+  "play sound Nature",
+  "j Ok, ok I get it, it just sucks that I must leave. I love the enviroment here and once I leave, I will probably never be able to see it again.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound nature",
+  "l Go prepare some wood, it's getting dark already.",
+
+  "scene Home-heli",
+  "In the morning, there was a helicopter flying over Javier house, It was pretty low to the ground.",
+
+  "scene Home-heli",
+  "show j Normal right fadeIn",
+  "play sound helicopter",
+  "j Grandma, why is the helicopter flying so low today?",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound helicopter",
+  "l It's probably looking for members of the cartel or those people that sell or buy drugs. There has been a steady increase of cartel influence around here recently and the government knows it. So they usually send helicopters or soldiers to patrol.",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound helicopter",
+  "oh, That makes sense",
+
+  "scene Blackscreen",
+  "play sound River",
+  "30 minutes later",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound River",
+  "It's strange that those guys are in such a big hurry",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound River",
+  "l Probably who the helicopter was looking for, it's best not to get involved, don’t go near the river for at least an hour just in case there are more people.",
+
+  "scene Blackscreen",
+  "play sound River",
+  "15 minutes later.",
+
+  "scene Home",
+  "play sound River",
+  "A group of soldiers arrive",
+
+  "scene Home",
+  "show sa Inter right fadeIn",
+  "play sound River",
+  "sa Hello there young man, have you seen a group of men pass by here running?",
+
+  {"Choice": {
+
+      "Dialog": "What are you going to do?",
+      "Shoot": {
+        "Text": "Yes, I did they were running by a few minutes ago.",
+        "Do": "jump Yes-Running"
+      },
+      "Wait": {
+        "Text": "No, I didn't see anyone go by",
+        "Do": "jump Saw-Nothing"
+      }
+    }
+  }
+
+
+
+
+],
+
+"Yes-Running": [
+  "scene Home",
+  "show sa Happy right fadeIn",
+  "play sound re-group",
+  "sa Thanks, Everyone lets head out before they get away, Move Move!!!",
+
+  "scene Home",
+  "show j Mad left fadeIn",
+  "Later, that night I went up to my favorite rock and comtemplated what had happened until now. I came to the conclusion that I don’t want to leave Mexico, but I want to see my parents soon. And it would be the best for me to leave, it would provide me with a better future.",
+
+"scene Blackscreen",
+"Next Day - A beatiful morning with the sun shining bright.",
+
+"scene Home",
+"show l Normal left fadeIn",
+"l I have to go to the city, to talk to your parents. Since we don't have any phone near us. I will be gone for a few days. You will be staying with your cousin. I will return as soon as I can.",
+
+"scene Home",
+"show j Normal right fadeIn",
+"j Ok, we should be fine just glad I am not staying alone.",
+
+"scene Blackscreen",
+"Next Day",
+
+"scene Home",
+"show a Normal right fadeIn",
+"a Javier, I need to go to work in town today. I don't know what time I will return. Will you be ok by yourself?",
+
+"scene Home",
+"show j Normal right fadeIn",
+"j I should be fine, just try to return before it gets dark.",
+
+"scene Home",
+"show a Normal right fadeIn",
+"a I will try, can't promise anything. I left food for you, you should be fine.",
+
+"scene Home",
+"show j Normal right fadeIn",
+"Ariel left Javier alone while he went to work, Javier runs out of food by the middle of the day. At this point he decides to go fishing.",
+
+"scene River",
+"Middle of Day - I look for the best place to find fish and dive head-first underwater with my visor and harpoon to get some fishes.",
+
+"scene Fishing-Blood",
+"While underwater, some friends that I had mentioned the soldiers to arrived. They saw me fishing underwater. I didn't see them approach me. They took my life in cold blood as revange and this is where my life ended.",
+
+"scene Fin-Red",
+"The end"
+
+],
+"Saw-Nothing": [
+  "scene Home",
+  "show sa Mad right fadeIn",
+  "play sound footsteps",
+  "sa Ok, we found nothing so it seems you are telling the truth, Now be a good boy and take care of your grandma. Bye.",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "j Later that night I went up to my favorite rock and contemplated about what had happened up to that point. I came to the conclusion that I don’t want to leave Mexico, but I want to see my parents soon. And it would be best for me to leave, it would provide me with a better future.",
+
+  "scene Blackscreen",
+  "Next Day - A beatiful morning with the sun shining bright.",
+
+  "scene Home",
+  "show l Normal left fadeIn",
+  "play sound river",
+  "l I have to go to the city to talk your parents since we don’t have a phone near us. I will be gone for a few days, you will be staying with your cousin until I get back. I will return as soon as I can.",
+
+"scene Home",
+"show l Normal right fadeIn",
+"play sound river",
+"l Ok, we should be fine I'm just glad I am not staying alone.",
+
+"scene Blackscreen",
+"Next Day",
+
+"scene Home",
+"show a Normal left fadeIn",
+"play sound river",
+"a Javier I need to go to work in town today, I don’t know what time I will return. Will you be ok by yourself?",
+
+"scene Home",
+"show j Normal left fadeIn",
+"play sound footsteps",
+"j I should be fine, just try to return before it gets Dark.",
+
+"scene Home",
+"show a Normal left fadeIn",
+"a I will try can't promise anything. I left food for you, you should be fine.",
+
+"scene River",
+"show j Normal right fadeIn",
+" ARIEL left JAVIER alone while he went to work, JAVIER had ran out of food by the middle of the day. At this point he decides to go fishing.",
+
+"scene Fishing",
+"show j Normal right fadeIn",
+"Middle of Day -  I look for the best place to find fish and dive head-first under water, I got a few fishes and I head back home to cook them. This would be the first time I was cooking for myself, but I had watched my grandma do it plenty of times before, so I was able to get it done. This would provide me with food for at least one day to two days",
+
+"scene Home",
+"5:30 PM -  “The shadows then started to reach my house which was a sign that night was quickly approaching.”",
+
+"scene Home",
+"“I then went to the forest nearby and cut some wood, so that I would have some fire for the night, doing this meant I could make dinner and have some light.”",
+
+"scene Fire",
+"After I got home with the wood I made a fire and ate, I then waited for my cousin for a few hours, but no sign of him.",
+
+"scene Home",
+"At about 9:00 PM, I heard wolves howling in the distance this made me uncomfortable because I didn’t want to them to get near my house. I then turned off the fire and headed to my room and started a fire in there and let it burn until I went to sleep",
+
+"scene Home",
+"show j Normal left fadeIn",
+"j I am so glad you are back, I am hungry.",
+
+"scene Home",
+"show l Normal right fadeIn",
+"l Glad to be back",
+
+"scene Blackscreen",
+
+{"Choice": {
+
+    "Dialog": "Click continue..",
+    "Shoot": {
+      "Text": "Continue",
+      "Do": "jump Trip"
+    }
+  }
+}
+
+],
+"Trip": [
+  "scene Home",
+  "show l Normal right fadeIn",
+  "l Ok, so I talked to your parents they told me they will be able to bring you to the U.S within the next few months.",
+
+  "scene Home",
+  "show j Normal left fadeIn",
+  "j Ok, but when I go grandma, I will really miss you, I am thankful for all these years you've taken care of me while my parents were in the United States. I will never forget you and hopefully, when I do go, I'll get the opportunity to come back and see you because I will really miss you..",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "At this moment, my grandmother started crying and said she will miss me as well and an overwhelming feeling of sadness took over me when I realized that I would probably never be able to see her again.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "Of course this, made me even more sad about leaving to the United States, but I knew that I had to if I wanted to see my family and have a better future.",
+
+  "scene Home",
+  "show j Mad right fadeIn",
+  "j I don't want to go and I don't want to leave you here.",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "As the day went on we continued to talk about my trip on the porch. Looking at the river in front of us and seeing that night was getting close, this was a very sad afternoon.",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "l The next day I was swimming in the river having a great day, when I returned to my house from swimming. I was suprised to see my grandmother Sabrina was there. I immediately knew that she had come for a reason because she almost never visits us. I just didn't know what.",
+
+  "scene Home",
+  "show sa Normal right fadeIn",
+  " Javier your parents sent me to take you to the city, they have finished arranging your trip to the U.S, Say goodbye to your grandma and get one pair of clothes because we are leaving as soon as you are ready.",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "j At this moment, I didn't know what to think even though I was warned ahead of time, when the decision to leave was right there in front of me so many thoughts took over me in my head.",
+
+  "scene Home",
+  "show j normal right fadeIn",
+  "j I don't want to go, leave me here and tell my parents that I made the choice to stay.",
+
+  "scene Home",
+  "show Sa normal right fadeIn",
+  "It not your choice, your parents had to work vigorously for 6 years in order to bring you to the United States. They saved restlessly to bring you to where they are and you are not going to waste all their efforts by not going.",
+
+  "scene Home",
+  "show Sa normal right fadeIn",
+  "You have an opportunity, that many here wish they had and if they did, they would take it in a heart beat, now take it.",
+
+  "scene Home",
+  "show j Sad left fadeIn",
+  "Reluctantly, I went to my room and put on my best clothes because they told to not bring anything else, except what I was wearing and my wallet. I said goodbye to my grandmother she started crying, because she knew I would never see her again. This made me start crying too..",
+
+  "scene Home",
+  "show j Sad right fadeIn",
+  "j I hugged her and said goodbye. I wanted to say goodbye to my cousin as well, but unfortunately at that moment he wansn't there. I began to walk toward the outside of the house but all of a sudden I felt my eyes begin to water.",
+
+  "scene Home-Noon",
+  "show j Sad right fadeIn",
+  "j One of my cats started following me meowing for about half a mile. I grabbed him and said goodbye this made me extremely sad, because I knew I was leaving everything I knew and cared  for behind, only taking my clothes and my wallet. At the same time, I knew I would soon be able to see my parents in the United States.",
+
+  "scene Blackscreen",
+  "show j Sad right fadeIn",
+  "At this point in my story, I became an observer of my own story, the reason being because I lost the ability to make choices. All choices until I arrived with my parents had already been made for me.",
+
+  "scene Grandma Home",
+  "show j normal right fadeIn",
+  "j That night, I slept at my grandma, Sabrina's house, it was a sad and lonely night for me.",
+
+  "scene City",
+  "show j normal right fadeIn",
+  "j The next day, we got in car and made our way to the city of El Lazaro Cardenas, where my Aunt lived with her husband who would help me get to the border.",
+
+  "scene Aunt Home",
+  "show j normal right fadeIn",
+  "We arrived at El Lazaro Cardenas, the next day in the morning.",
+
+  "scene Aunt Home",
+  "show j right fadeIn",
+  "We ate at my aunt's, because I hadn’t eaten the entire ride there, my grandmother told me eat because this would be the best meal I'd have until I reached my parents. I took her advice and ate as best I could, because I knew she was right.",
+
+  "scene Aunt Home",
+  "show j normal right fadeIn",
+  " I slept there for the night, the next morning me and my uncle got up early and took a bus from El Lazaro Cardenas to Mexico City.",
+
+  "scene Mexico City",
+  "show j normal right fadeIn",
+  "We arrived at Mexico city a couple of hours later.",
+
+  "scene Airport",
+  "show j normal right fadeIn",
+  "This was the first time I had been on an Airplane and I was scared that it was going to fall because I had heard so many stories about airplanes falling and everyone on it dying. My uncle calmed me down and told me that it was going to be fine.",
+
+
+"scene Tijuana",
+"show j normal right fadeIn",
+"I calmed down, and got on the airplane. It took only a few hours for us to land in Tijuana.",
+
+"scene Tijuana",
+"show j normal right fadeIn",
+"My uncle took me to a restaurant and we ate.",
+
+"scene Tijuana",
+"show j normal right fadeIn",
+"Then we went to meet the person who my parents had arranged to help me cross into the U.S. We met the Coyote who was a woman. At this moment, I was very uneasy because I know that there are many coyotes who are very untrustworthy and would leave me anywhere only caring about getting their money.",
+
+"scene Tijuana",
+"show Un normal right fadeIn",
+"Ok, good luck, I will be going back to El Lazaro Cardenas I will leave you with this lady she will help you get you across the border.",
+
+"scene Tijuana",
+"show j normal right fadeIn",
+"At this moment, I felt alone and lost because the only person that I knew left me alone with a complete stranger who I had never met before. I knew I couldn’t complain so I stayed with her, she took to me to her house where I slept on the floor for the night.",
+
+"scene Tijuana",
+"show j normal right fadeIn",
+"The next day, I got up early in the morning and she directed me to get into her car, after a while we had finally reached the border. At that moment she took me out of the car and told me not to speak, she talked to the guard and got me through to the other side.",
+
+"scene AZ-H",
+"show j normal right fadeIn",
+"She drove all the way to phoenix arizona and dropped me off at the home of yet another coyote.",
+
+"scene AZ-H",
+"show j normal left fadeIn",
+"This person made me feel very unseasy, the reason being that she was very mean and required me to learn one english sentence before we could leave to the next place. The sentence was “I am a U.S Citizen”. It was the first english sentence I had ever heard and I couldn’t say it. I struggled the whole day to try and say it right. Until I got it the best I could in the afternoon.",
+
+"scene AZ-H",
+"show j normal left fadeIn",
+"The reason I had to learn this sentence, was because we still had to get passed another check point so that we could be in the clear.",
+
+
+"scene AZ-H",
+"show j normal fadeIn",
+"We then got in another car and headed deeper into Arizona. We got to a checkpoint where a soldier checked all our documents and asked several questions. At this moment is when I used the sentence I had been taugh and it worked, because they let us through.",
+
+"scene AZ-H",
+"show j normal right fadeIn",
+"Later, as it was getting dark we arrived at a house where there were a lot of other people who were making their trip to the United States as well. This house was very dark inside and completely shut out from the outside world. We were not allowed to get close to the window or make much sound.",
+
+"scene AZ-H",
+"show j normal right fadeIn",
+"In this house, I stayed for about 2 days where I was not allowed to eat or talk to anyone, including the coyote that had gotten me to this point.",
+
+"scene AZ-H-V",
+"show j normal right fadeIn",
+"He, then brought a van to the house and told about 12 people to get in, I couldn't believe this because the van was so small it could could only fit 6-7 people at most. Regardless, We all got in and crammed into what little space we had, it was so painful to be squished together.",
+
+"scene Road",
+"show j normal right fadeIn",
+"About 4 hours into the trip, he asked me what Washington I was going to, he asked whether I was going to Washington D.C or the state of Washington. At that moment I felt very uneasy because he told me, if I didn’t know he would return to the isolated house and leave me there. This made me mad and proved to me that this guy only cared about one thing and that was getting his money, but I remembered that when I talked to my father he mentioned Seattle which I knew was a city in the state of Washington where we were headed.",
+
+"scene Road",
+"show j normal right fadeIn",
+"This answered his question and he seemed to be content with the answer, I couldn't believe I was soon going to be able to see my parents in the United States. ",
+
+"scene Saars",
+"show j normal right fadeIn",
+"The next day around Midnight we arrived in Seattle. I was so happy to finally be out of that tiny van and be able to see my parents for the first time.",
+
+"scene Saars",
+"show j normal right fadeIn",
+"They both ran toward me when they saw the van, and the minute I saw them I began running toward them as well.  Afterward we got into my father's car and headed to our new home in the U.S.",
+
+"scene Fin-Blue"
+
+],
+
+	"No": [
+
+
+		"end"
+	]
+
+}
+
+
+}

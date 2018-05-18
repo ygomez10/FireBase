@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "capstone-website-834e7"
+    "default": "capstone-website-834e7",
+    "firebase deploy": "capstone-website-834e7"
   }
 }

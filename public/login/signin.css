@@ -1,0 +1,136 @@
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+#banner {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+  color: white;
+  margin: auto;
+   width: 100%;
+   border: 5px solid #616A6B;
+   padding: 10px;
+   font-size: 60px;
+}
+#notif {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+  color: white;
+}
+#email{
+  text-align: center;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#em {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: white;
+  text-align: left;
+}
+#password{
+  text-align: center;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#pw {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: white;
+  text-align: left;
+}
+#signin {
+  background-color: #616A6B  ;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#signup {
+    background-color: #616A6B  ;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#forgotpass {
+  background-color:#616A6B;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+#quickstart-verify-email {
+    background-color: #616A6B  ;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+
+signin:hover{
+  background color: green;
+}
+body {
+  background-color: #FFDAB9;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+
+  position: absolute;
+   margin: auto;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 400px;
+   height: 300px;
+
+}
+#container {
+  display: block;
+   border-radius: 5px;
+   padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+#checkBox {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    color: white;
+}
+#guest {
+  background-color: #616A6B  ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
